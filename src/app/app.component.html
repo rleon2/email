@@ -1,0 +1,39 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<! -- making the page split into two containers left and right. -->
+        <div class="container-fluid">
+                <div class="row">
+                        <div class="col-md-4 left-side">
+                        <div class = "profile">
+                                <app-profile></app-profile>
+                        </div>
+
+                                <div><button type ="button" class="btn btn-primary btn-block"> New Message </button></div>
+                                <div class="side-bar-options">
+
+                                        <div class="option"><i class="fas fa-sort-down"></i> Inbox(2)</div>
+                                        <div class="option"><i class="fas fa-caret-square-right"></i> Drafts</div>
+                                        <div class="option"><i class="fas fa-caret-right"></i> Sent</div>
+                                        <div class="option"><i class="fas fa-flag"></i> Spam</div>
+                                        <div class="option"><i class="fas fa-trash"></i> Trash</div>
+
+
+                                </div>
+                        </div>
+                        <div class="col-md-8" >
+                                <div><app-topbar></app-topbar></div>
+                                <div>
+                                        <app-message-list [emails]="emails"></app-message-list>
+                                </div>
+
+                        </div>
+
+                </div>
+
+                <!-- <li *ngFor="#message-list of message-list">
+                        {{ hero }}
+                      </li>
+                    </ul> */-->
+
+        </div>

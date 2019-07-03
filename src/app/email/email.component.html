@@ -1,0 +1,20 @@
+<div (click)="onClick()" class="container">
+    <div><i class="fas fa-circle"></i></div>
+    <div class="row d-flex">
+        <div class="col" style="padding: 0;">
+            <div class="float-left">
+                {{email.name}}
+            </div>
+        </div>
+        <div class="col">
+            <div class="float-right"> <!--float-right makes it go automatically to the right -->
+                {{email.time}}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+            
+        <h4>{{email.title}}</h4>
+    </div>
+    <div class="row">{{email.msg}}</div>
+</div>
