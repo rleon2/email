@@ -1,0 +1,28 @@
+<p>login-page works!</p>
+<div class="container">
+    <div class = "row justify-content-md-center">
+        <div class = "col-12 col-md-8 form-box">
+            <form [formGroup] = "loginForm" (ngSubmit)="onSubmit()">
+
+                <div class = "form-group">
+                    <label for = "email">E-mail</label>
+                    <input type="text" id = "email" formControlName = "email" class = "form-control" placeholder="Please Enter your e-mail">
+                    <span
+              *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched"
+              class="form-text text-muted">Please enter a email!</span>
+              </div>
+
+
+
+                
+
+
+
+
+            </form>
+
+        </div> <!--div for column form-box endtag-->
+
+    </div><!--div for the row endtag-->
+
+</div> <!--container div endtag-->

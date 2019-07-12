@@ -1,15 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
 
-
-<! -- making the page split into two containers left and right. -->
         <div class="container-fluid">
                 <div class="row">
                         <div class="col-md-4 left-side">
                         <div class = "profile">
-                                <app-profile></app-profile>
+                                <app-profile></app-profile> <!--My profile component with img and user-info-->
                         </div>
+                
+                     
 
-                                <div><button type ="button" class="btn btn-primary btn-block"> New Message </button></div>
+                                <div><button myColor class = "btn btn-primary btn-block"> New Message </button></div>
                                 <div class="side-bar-options">
 
                                         <div class="option"><i class="fas fa-sort-down"></i> Inbox(2)</div>
@@ -22,7 +23,7 @@
                                 </div>
                         </div>
                         <div class="col-md-8" >
-                                <div><app-topbar></app-topbar></div>
+                                <div><app-topbar></app-topbar></div>  <!--Topbar component with search bar and icons-->
                                 <div>
                                         <app-message-list [emails]="emails"></app-message-list>
                                 </div>
@@ -30,10 +31,9 @@
                         </div>
 
                 </div>
+                <div><app-login-page></app-login-page></div> 
 
-                <!-- <li *ngFor="#message-list of message-list">
-                        {{ hero }}
-                      </li>
-                    </ul> */-->
 
-        </div>
+</div>
+
+                

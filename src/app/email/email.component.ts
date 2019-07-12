@@ -1,6 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { del } from 'selenium-webdriver/http';
 import { NONE_TYPE } from '@angular/compiler/src/output/output_ast';
+import { createInjectable } from '@angular/compiler/src/core';
+import { getLocaleExtraDayPeriodRules } from '@angular/common';
 
 
 @Component({
@@ -9,6 +11,8 @@ import { NONE_TYPE } from '@angular/compiler/src/output/output_ast';
   styleUrls: ['./email.component.scss']
 })
 export class EmailComponent implements OnInit {
+
+public show:boolean=true;
 @Input() email;
 // isRemoved : boolean = true;
 @Output() test: EventEmitter<string> = new EventEmitter<string>()
@@ -16,11 +20,11 @@ export class EmailComponent implements OnInit {
 
   ngOnInit() {
   }
-    // We want to hide circle when we click the email component
+
   onClick(){
-    // var element = document.getElementById('fa-circle');
-    // element.style.visibility= 'hidden';
-    console.log('hide circle');
-    
+    this.show= !this.show
   }
+
+    // We want to hide circle when we click an email component
+
 }

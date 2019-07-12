@@ -1,21 +1,30 @@
 .left-side {
     background-color: rgb(207, 203, 203);
-    font-family: DM Serif Display;
+    font-family: Fira Sans Condensed;
 }
 
 .col-md-8{
 
-    background-color: rgb(192, 190, 190);
-    font-family: DM Serif Display; 
+    background-color: rgb(160, 156, 156);
+    font-family: Fira Sans Condensed; 
 }
 .button{
 
     
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Fira Sans Condensed;
     
 }
 
-
+.divclass{
+    font-size:5em;
+  color:grey;
+  cursor:pointer;
+}
+.divclass:hover .fas fa-search:before{
+    content:"\f05d";
+    color:green;
+    opacity:0.4;
+  }
 
 .option{
     margin-bottom: 10px;
